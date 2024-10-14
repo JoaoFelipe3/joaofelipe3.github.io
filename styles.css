@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Uiua386;
+    src: url("./Uiua386.ttf");
+}
+
+pre {
+    font-size: 1.5em;
+    font-family: "Uiua386";
+}
+
+a {
+    text-decoration: none;
+}
+
+a[href^="http"]::after {
+    content: "↗";
+}
+
+span.icon {
+    display: inline-block;
+    width: 0.5em;
+    object-fit: cover;
+}
+
+span.icon img {
+    width: inherit;
+}
