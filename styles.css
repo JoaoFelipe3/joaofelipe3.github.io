@@ -1,27 +1,58 @@
 @font-face {
-    font-family: Uiua386;
-    src: url("./Uiua386.ttf");
+    font-family: 'IosevkaTerm';
+    src: url(/fonts/IosevkaTermNerdFontMono-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
-pre {
-    font-size: 1.5em;
-    font-family: "Uiua386";
+@font-face {
+    font-family: 'IosevkaTerm';
+    src: url(/fonts/IosevkaTermNerdFontMono-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 
-a {
-    text-decoration: none;
+@font-face {
+    font-family: 'IosevkaTerm';
+    src: url(/fonts/IosevkaTermNerdFontMono-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
 }
 
-a[href^="http"]::after {
-    content: "↗";
+@font-face {
+    font-family: 'IosevkaTerm';
+    src: url(/fonts/IosevkaTermNerdFontMono-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
-span.icon {
-    display: inline-block;
-    width: 0.5em;
-    object-fit: cover;
+* {
+    font-family: 'IosevkaTerm';
 }
 
-span.icon img {
-    width: inherit;
+body {
+    background: black; /* placeholder */
+    color: white;
+}
+
+ul {
+    padding-left: 2ch;
+}
+
+ul > li::marker {
+    content: '• ';
+}
+
+/* custom element! */
+
+paren {
+    display: inline;
+    color: gray;
+    font-style: italic;
+}
+paren::before {
+    content: '(';
+}
+paren::after {
+    content: ')';
 }
