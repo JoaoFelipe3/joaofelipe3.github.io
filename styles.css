@@ -31,7 +31,7 @@
 }
 
 body {
-    background: black; /* placeholder */
+    background: #010210;
     color: white;
 }
 
@@ -44,7 +44,6 @@ ul > li::marker {
 }
 
 /* custom element! */
-
 paren {
     display: inline;
     color: gray;
@@ -55,4 +54,18 @@ paren::before {
 }
 paren::after {
     content: ')';
+}
+
+a {
+    color: #8080ff;
+}
+
+abbr[title] {
+    text-decoration: underline #ffffff80;
+}
+
+.brazil {
+    background-image: linear-gradient(-45deg, #009440, #ffcb00, #302681, #ffffff, #302681, #ffcb00, #009440);
+    color: transparent;
+    background-clip: text;
 }
