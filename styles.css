@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'IosevkaTerm';
-    src: url(/fonts/IosevkaTermNerdFontMono-Regular.ttf);
+    src: url(/assets/fonts/IosevkaTermNerdFontMono-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IosevkaTerm';
-    src: url(/fonts/IosevkaTermNerdFontMono-Bold.ttf);
+    src: url(/assets/fonts/IosevkaTermNerdFontMono-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IosevkaTerm';
-    src: url(/fonts/IosevkaTermNerdFontMono-Italic.ttf);
+    src: url(/assets/fonts/IosevkaTermNerdFontMono-Italic.ttf);
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IosevkaTerm';
-    src: url(/fonts/IosevkaTermNerdFontMono-BoldItalic.ttf);
+    src: url(/assets/fonts/IosevkaTermNerdFontMono-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
@@ -35,12 +35,16 @@ body {
     color: white;
 }
 
-ul {
+ul:not(.markerless) {
     padding-left: 2ch;
 }
 
-ul > li::marker {
-    content: '• ';
+ul:not(.markerless) > li::marker {
+    content: '⮡ ';
+}
+
+ul.markerless {
+    padding-left: 0;
 }
 
 /* custom element! */
@@ -68,4 +72,8 @@ abbr[title] {
     background-image: linear-gradient(-45deg, #009440, #ffcb00, #302681, #ffffff, #302681, #ffcb00, #009440);
     color: transparent;
     background-clip: text;
+}
+
+img.img8831 {
+    image-rendering: pixelated;
 }
